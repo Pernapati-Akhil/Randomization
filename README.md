@@ -1,5 +1,10 @@
 # System-verilog
 
-OOps concepts 
-  object orient programming
+o Datatypes
+o OOps concepts 
+  -> Inheritance
+  -> Polymorphism
+  -> Encapsulation
+o Randomization 
+o 
   
