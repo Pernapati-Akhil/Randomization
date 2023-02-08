@@ -1,0 +1,19 @@
+// dynamic array randomize
+module akhil();
+  int a[][];
+  int i,j,ax;
+  initial
+    begin
+      //reach(a[i])
+      a= new[100];
+      foreach(a[i])
+        a[i]=new[100];
+      
+      foreach(a[i,j])
+    begin
+      //={{$urandom()%50}*2}+1;
+      a[i][j]=$urandom%100;
+      $display("%d",a[i][j]);
+    end
+    end  
+endmodule
