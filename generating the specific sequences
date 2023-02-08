@@ -1,0 +1,64 @@
+//code for the sequence 0,1,0,2,0,3.....
+module akhil();
+  int a[];
+  int i,j,ax,b=1;
+  initial
+    begin
+      //reach(a[i])
+      a= new[100];
+      for(i=0;i<a.size;i=i+1)
+    begin
+      //={{$urandom()%50}*2}+1;
+      if(i%2==0)
+        a[i]=0;
+      else
+        begin
+        a[i]=b;
+          b=b+1;end
+      $display("%d",a[i]);
+    end
+    end  
+endmodule
+
+
+//code for the sequence 0,1,0,3,0,5.....
+module akhil();
+  int a[];
+  int i,j,ax,b;
+  initial
+    begin
+      a= new[100];
+      for(i=0;i<a.size;i=i+1)
+    begin
+      if(i%2==0)
+        a[i]=0;
+      else
+        begin
+           a[i]=i;
+         end
+      $display("%d",a[i]);
+    end
+    end  
+endmodule
+
+//code for the sequence 0,2,0,4,0,6.....
+module akhil();
+  int a[];
+  int i,j,ax,b=1,c=0;
+  initial
+    begin
+      //reach(a[i])
+      a= new[100];
+      for(i=0;i<a.size;i=i+1)
+    begin
+      //={{$urandom()%50}*2}+1;
+      if(i%2==0)
+        a[i]=0;
+      else
+        begin
+        a[i]=c;
+          c=(b+1)*2;end
+      $display("%d",a[i]);
+    end
+    end  
+endmodule
